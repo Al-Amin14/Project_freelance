@@ -3,11 +3,11 @@
       <% for( let i = 0; i <sli_details.length; i++ ) { %>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="<%=i %>" class="active" aria-current="<%=sli_details[i]["class"] %>" aria-label="Slide <%=i+1%>"></button>
       <% } %>
-    </div>  
+    </div>
     <div class="aligning carousel-inner">
       <% for( let i= 0; i < sli_details.length; i++ ) { %>
         <div class="carousel-item <%=sli_details[i]["class"] %>" data-bs-interval="10000">
-          <img src="<%=sli_details[i]["imageUrl"] %>" class="d-block w-100 slider-image" alt="...">
+          <img  src="<%=sli_details[i]["imageUrl"] %>" class="d-block w-100 slider-image img-fluid" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5><%=sli_details[i]["title"] %></h5>
             <p><%=sli_details[i]["subtitle"]%></p>

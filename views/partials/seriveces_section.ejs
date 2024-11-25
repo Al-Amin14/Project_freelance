@@ -1,0 +1,22 @@
+<section id="services_section" class="py-5">
+    <div class="container">
+        <h1 class="text-center text-secondary fw-bold ">Services that we provide</h1>
+    <div class="row">
+        <% for( let i = 0; i < serv_sec.length; i++ ) { %>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="container text-center">
+                            <i class="<%= serv_sec[i]["icon"] %>"></i>
+                         </div>
+                        <h5 class="title text-dark"><%= serv_sec[i]["title"] %></h5>
+                        <p><%= serv_sec[i]["description"] %></p>
+                        <a href="<%= serv_sec[i]["link"] %>" class="me-2">Check</a>
+                        <a href="#!" class="ms-2"><%= serv_sec[i]["linkText"] %></a>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    </div>
+ </section>

@@ -1,9 +1,15 @@
 const express=require("express")
 const app=express()
+const bodyParser=require("body-parser")
 const blog=require("./routes/blog.js")
 const ejs=require('ejs')
 const mongoose=require("mongoose")
 const details=require("./models/details.js")
+
+app.use(bodyParser.urlencoded({
+    extended:true
+}))
+
 
 
 app.use(express.static('public'))
